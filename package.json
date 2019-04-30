@@ -1,0 +1,28 @@
+{
+  "name": "wt2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ahmedmalkoc@bitbucket.org/ahmedmalkoc/wt18am17469.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ahmedmalkoc/wt18am17469#readme",
+  "dependencies": {
+    "async": "^2.6.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "multer": "^1.4.1",
+    "mysql2": "^1.6.4",
+    "path": "^0.12.7",
+    "pug": "^2.0.3",
+    "sequelize": "^4.42.0",
+    "url": "^0.11.0"
+  }
+}

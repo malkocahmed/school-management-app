@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dodavanje zadatka</title>
+        <link rel="stylesheet" type="text/css" href="addZadatak.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+       <!--  <script src="validacija.js"></script>
+        <script type="text/javascript" src="addZadatak.js"></script>
+ -->
+        <div id="header">
+            <h1>Dodavanje zadatka</h1>
+            <img id="logo" src="etf.gif" alt="ETF">
+            <div id="meni">
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="zadaci.html">Odabir vježbe</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vježbe/spirale</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="glavniSadrzaj">
+            <form id="noviZadatak" method="POST" action="http://localhost:8080/addZadatak" enctype="multipart/form-data">       
+                <h3>Novi zadatak</h3>
+                <p>Naziv zadatka</p> 
+                <input type="text" name="naziv" required>
+                <br>
+                <p>Tekst postavke *</p>
+                <input type="file" name="postavka" required>
+                <br>
+
+                <br>
+                
+                <button type="submit" id="dugme">Dodaj</button>  
+
+                <div id="greska">
+
+                </div>
+
+            </form>
+        </div>
+
+        <div id="footer">
+            <p>Web tehnologije 2018/19</p>
+        </div>
+    </body>
+</html>

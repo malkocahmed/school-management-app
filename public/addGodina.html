@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dodavanje godine</title>
+        <link rel="stylesheet" type="text/css" href="addGodina.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+        <!-- <script src="validacija.js"></script>
+        <script type="text/javascript" src="addGodina.js"></script> -->
+        <script src="GodineAjax.js"></script>
+        <script src="addGodina_ajaxSkripta.js"></script>
+
+        <div id="header">
+            <h1>Dodavanje godine</h1>
+            <img id="logo" src="etf.gif" alt="ETF">
+            <div id="meni">
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="zadaci.html">Odabir vježbe</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vježbe/spirale</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="side">
+            <form method="POST" action="http://localhost:8080/addGodina">
+                <h3>Pojedinačni unos</h3>
+                
+                <p>Naziv godine</p>
+                <input type="text" name="nazivGod" required >
+                
+                <p>Naziv repozitorija vježbe</p>
+                <input type="text" name="nazivRepVje" required>
+
+                <p>Naziv repozitorija spirale</p>
+                <input type="text" name="nazivRepSpi" required>
+                
+                <br> <br> <br>
+                <button type="submit" name="submit">Unesi</button>
+                <button type="button" name="ponisti">Poništi</button>
+    
+            </form>
+            
+            <div id="greska">
+
+            </div>
+
+            <br>
+
+            <button type="button" onclick="osvjezi()"> Osvježi (ajax metoda)</button>
+        </div>
+        <div id="glavniSadrzaj">
+                
+        </div>
+        <div id="footer">
+            <p>Web tehnologije 2018/19</p>
+        </div>
+    </body>
+</html>

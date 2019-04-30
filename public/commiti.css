@@ -1,0 +1,144 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("1.jpeg");
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#header {
+    background-color: lightgoldenrodyellow;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: auto;
+    padding: 10px;
+}
+#logo {
+    float: left;
+    width: 65px;
+    height: 65px;
+}
+h1 {
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#meni {
+    clear: both;
+}
+#meni ul {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+#meni li {
+    font-size: 17px;
+    display: inline;
+}
+#meni a {
+    text-decoration: none;
+}
+#meni li:not(:first-child):before {
+    content: " | ";
+}
+
+#footer {
+    box-sizing: border-box;
+    background-color: lightgoldenrodyellow;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 80px;
+    clear: both;
+}
+#footer p {
+    font-size: 20px;
+    float: right;
+} 
+#info {
+    height: 30%;
+}
+#commiti {
+    height: 50%;
+}
+#content {
+    box-sizing: border-box;
+    background-color: deepskyblue;
+    height: calc(100% - 230px);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    min-height: 300px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+/*
+#commiti table {
+    box-sizing: border-box;
+    margin: 5%;
+    width: 70%;
+    height: 60%;
+    border-collapse: collapse;
+}
+table,th,td {
+    border: 3px solid black;
+}
+th,td {
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+    text-align:center;
+}
+th {
+    background-color: blueviolet;
+}
+td:first-child {
+    width: 30%;
+} */
+#info {
+    line-height: 1.5;
+    margin-left: 5%;
+}
+#content table {
+    box-sizing: border-box;
+    margin: 5%;
+    width: 90%;
+    height: 80%;
+    border-collapse: collapse;
+}
+table,th,td {
+    border: 3px solid black;
+}
+th,td {
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+    text-align:center;
+}
+th {
+    background-color: blueviolet;
+}
+td:first-child {
+    width: 30%;
+}
+#create, #add, #delete, #edit {
+    float: left;
+    margin-left: 10px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 599px){
+    #header {
+        background-color: lightgoldenrodyellow;
+        border: 2px solid black;
+        padding: 15px;
+        height: 220px;
+    }
+    h1 {
+        position: absolute;
+        top: 150px;
+        margin-left: 20px;
+        padding-bottom: 20px;
+    }
+}

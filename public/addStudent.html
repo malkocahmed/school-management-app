@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dodavanje studenata</title>
+        <link rel="stylesheet" type="text/css" href="addStudent.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!-- <script src="validacija.js"></script>
+        <script type="text/javascript" src="addStudent.js"></script> -->
+        <script type="text/javascript" src="addStudent_skripta.js"></script>
+        <script src="BitBucket.js"></script> 
+
+        <div id="header">
+            <h1>Dodavanje studenata</h1>
+            <img id="logo" src="etf.gif" alt="ETF">
+            <div id="meni">
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="zadaci.html">Odabir vježbe</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vježbe/spirale</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="glavniSadrzaj">
+            <form name="fPojedinacni">
+                <h3>Bitbucket</h3>
+                <p>Godina</p>
+                <select name="sGodina">
+                    
+                </select>
+
+                <p>Key</p>
+                <input type="text" name="key" required>
+                
+                <p>Secret</p>
+                <input type="text" name="secret" required>
+                
+                <br> <br> <br>
+
+                <p>Studenti</p>
+                <div id="studenti">
+                    
+                </div>
+
+                <button type="button" value="Učitaj" onclick="kreiranjeinstance()">Učitaj</button>
+
+                <input type="button" id="dodaj" value="Dodaj" onclick="postzahtjev()"disabled>
+
+                
+                <div id=greska>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div id="footer">
+            <p>Web tehnologije 2018/19</p>
+        </div>
+    </body>
+</html>

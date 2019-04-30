@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dodavanje vježbe/spirale</title>
+        <link rel="stylesheet" type="text/css" href="addVjezba.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+       <!--  <script src="validacija.js"></script>
+        <script type="text/javascript" src="addVjezba.js"></script> -->
+        <script type="text/javascript" src="ucitavanje_addVjezba.js"></script>
+
+        <div id="header">
+            <h1>Dodavanje vježbe/spirale</h1>
+            <img id="logo" src="etf.gif" alt="ETF">
+            <div id="meni">
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="studenti.html">Pregled studenata</a></li>
+                    <li><a href="zadaci.html">Odabir vježbe</a></li>
+                    <li><a href="commiti.html">Pregled commita</a></li>
+                    <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+                    <li><a href="addVjezba.html">Dodavanje vježbe/spirale</a></li>
+                    <li><a href="addStudent.html">Dodavanje studenata</a></li>
+                    <li><a href="addGodina.html">Dodavanje godine</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="glavniSadrzaj">
+            <form name="fPostojeca" method="POST" action="http://localhost:8080/addVjezba">
+                <h3>Dodavanje postojeće vježbe/spirale</h3>
+                <p>Godina</p>
+                <select name="sGodine">
+                   
+                </select>
+
+                <p>Vježbe/Spirale</p>
+                <select name="sVjezbe">
+                                     
+                </select>
+                <br> <br>
+
+                <button type="submit" name="submit">Dodaj</button>
+            </form>
+
+            <form name="fNova" method="POST" action="http://localhost:8080/addVjezba">
+                <h3>Nova vježba/spirala</h3>
+
+                <p>Naziv vježbe</p>
+                <input type="text" name="naziv">
+
+                <p>Godina</p>
+                <select name="sGodine">
+                    
+                </select>
+
+                <br>
+                <br>
+
+                <input type="checkbox" name="spirala">Spirala
+
+                <button type="submit" name="submit">Dodaj</button>
+
+                <div id="greska">
+
+                </div>
+
+            </form>
+
+            <form name="fPoveziZadatak" method="POST" onsubmit="postRequest()"> <!--</form> method="POST" action="http://localhost:8080/vjezba/:idVjezbe/zadatak"> -->
+                <h3>Poveži zadatak</h3>
+
+                <p>Vježbe/Spirale</p>
+                <select name="sVjezbe" onchange="filter()">
+
+                </select>
+
+                <br>
+
+                <p>Zadatak</p>
+                <select name="sZadatak">
+                    
+                </select>
+
+                <br> <br>
+
+                <input type="submit" name="dZadatak" value="Dodaj zadatak">
+
+            </form>
+        </div>
+
+        <div id="footer">
+            <p>Web tehnologije 2018/19</p>
+        </div>
+    </body>
+</html>
