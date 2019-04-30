@@ -9,6 +9,7 @@ Web application that helps students and professors to track informations about t
 
 #### Technologies used
 Front-End: HTML5, CSS3, JavaScript, AJAX
+
 Back-End: Node.js, MySql, PhpMyAdmin, express.js, sequelize ORM
 
 ---
